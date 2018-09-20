@@ -17,4 +17,21 @@ function convertFahrenheitToCelsius(temperature) {
     fahrenheit = celsius * 1.8 + 32;
     return fahrenheit.toFixed(1);
     }
+
+    function convertPoundsToKilos(weight) {
+
+      let pounds = weight;
+      let kilo = 0;
+      kilo = pounds * 0.4536;
+      
+       return kilo.toFixed(1);
+    }
+
+    function convertKilosToPounds(weight) {
+
+      let kilo = weight;
+      let pounds = 0;
+      pounds = kilo / 0.4536;
+       return pounds.toFixed(1);
+    }
   
