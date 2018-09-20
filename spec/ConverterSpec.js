@@ -25,4 +25,17 @@ describe("Cooking Ingredients Converter", function() {
       expect(result).toEqual('1');
     });
   });
+
+  describe("Volume", function() {
+    it("Litres to Gallons", function() {
+      var result = convertLitresToGallons(1);
+
+      expect(result).toEqual('0.22');
+    });
+    it("Gallons to Litres", function() {
+      var result = convertGallonsToLitres(0.22);
+
+      expect(result).toEqual('1');
+    });
+});
 });

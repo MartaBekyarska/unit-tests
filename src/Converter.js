@@ -33,4 +33,22 @@ function convertFahrenheitToCelsius(temperature) {
       pounds = kilo / 0.4536;
       return pounds.toFixed(0);
     }
+
+    function convertLitresToGallons(volume) {
+
+      let litre = volume;
+      let gallon = 1;
+      
+      gallon = litre * 0.22;
+      return gallon.toFixed(2);
+    }
+
+    function convertGallonsToLitres(volume) {
+
+      let litre = 1;
+      let gallon = volume;
+      
+      litre = gallon / 0.22;
+      return litre.toFixed(0);
+    }
   
