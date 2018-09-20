@@ -23,15 +23,14 @@ function convertFahrenheitToCelsius(temperature) {
       let pounds = weight;
       let kilo = 0;
       kilo = pounds * 0.4536;
-      
-       return kilo.toFixed(1);
+      return kilo.toFixed(4);
     }
 
     function convertKilosToPounds(weight) {
 
       let kilo = weight;
-      let pounds = 0;
+      let pounds = 1;
       pounds = kilo / 0.4536;
-       return pounds.toFixed(1);
+      return pounds.toFixed(0);
     }
   

@@ -17,12 +17,12 @@ describe("Cooking Ingredients Converter", function() {
     it("Pounds to Kilos", function() {
       var result = convertPoundsToKilos(1);
 
-      expect(result).toEqual('0.453592');
+      expect(result).toEqual('0.4536');
     });
     it("Kilos to Pounds", function() {
-      var result = convertKilosToPounds(0.453592);
+      var result = convertKilosToPounds(0.4536);
 
-      expect(result).toEqual('1.0');
+      expect(result).toEqual('1');
     });
   });
 });
