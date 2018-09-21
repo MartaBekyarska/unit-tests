@@ -38,4 +38,17 @@ describe("Cooking Ingredients Converter", function() {
       expect(result).toEqual('1');
     });
 });
+
+describe("Distance", function() {
+  it("Miles to Kms", function() {
+    var result = convertMilesToKms(1);
+
+    expect(result).toEqual('1.609');
+  });
+  it("Gallons to Litres", function() {
+    var result = convertKmsToMiles(0.621);
+
+    expect(result).toEqual('1');
+  });
+});
 });

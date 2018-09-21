@@ -34,21 +34,37 @@ function convertFahrenheitToCelsius(temperature) {
       return pounds.toFixed(0);
     }
 
-    function convertLitresToGallons(volume) {
+    function convertPoundsToKilos(weight) {
 
-      let litre = volume;
-      let gallon = 1;
-      
-      gallon = litre * 0.22;
-      return gallon.toFixed(2);
+      let pounds = weight;
+      let kilo = 0;
+      kilo = pounds * 0.4536;
+      return kilo.toFixed(4);
     }
 
-    function convertGallonsToLitres(volume) {
+    function convertKilosToPounds(weight) {
 
-      let litre = 1;
-      let gallon = volume;
+      let kilo = weight;
+      let pounds = 1;
+      pounds = kilo / 0.4536;
+      return pounds.toFixed(0);
+    }
+
+    function convertMilesToKms(distance) {
+
+      let miles = distance;
+      let kms = 1;
       
-      litre = gallon / 0.22;
-      return litre.toFixed(0);
+      kms = miles * 1.609;
+      return kms.toFixed(1);
+    }
+
+    function convertKmsToMiles(distance) {
+
+      let kms = distance;
+      let miles = 1;
+      
+      miles = kms / 1.609;
+      return miles.toFixed(3);
     }
   
